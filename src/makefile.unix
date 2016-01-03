@@ -106,7 +106,6 @@ xCXXFLAGS=-O2 $(EXT_OPTIONS) -pthread -Wall -Wextra -Wno-ignored-qualifiers -Wfo
 xLDFLAGS=$(LDHARDENING) $(LDFLAGS)
 
 OBJS= \
-	obj/util_codedigest.o \
 	obj/fugue.o \
 	obj/hamsi.o \
 	obj/groestl.o \
