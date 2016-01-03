@@ -1,0 +1,9 @@
+Building rubies
+
+See doc/readme-qt.rst for instructions on building rubies QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of rubies.
+
+See doc/build-*.txt for instructions on building rubiesd,
+the intended-for-services, no-graphical-interface, reference
+implementation of rubies.
