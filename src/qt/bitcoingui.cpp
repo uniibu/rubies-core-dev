@@ -79,7 +79,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0)
 {
     resize(800, 600);
-    setWindowTitle(tr("Rubies Core wallet"));
+    setWindowTitle(tr("BetterBets Rubies"));
 
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));

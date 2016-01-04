@@ -54,9 +54,7 @@
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
         <file alias="Wallet_Logo">res/images/Wallet_Logo.png</file>
-        <file alias="BOST_BG">res/images/backg.png</file>
-        <file alias="Small_logo">res/images/rubies60x60.png</file>
-        <file alias="tor_logo">res/images/tor.png</file>
+        <file alias="Small_logo">res/images/rubies_small.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

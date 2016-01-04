@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>732</width>
-    <height>472</height>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -858,7 +858,7 @@ QTabWidget {
              <string>Your current total balance</string>
             </property>
             <property name="text">
-             <string notr="true">0 BTC</string>
+             <string notr="true">0 RBIES</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -882,6 +882,19 @@ QTabWidget {
         </size>
        </property>
       </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_logo">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../bitcoin.qrc">:/images/Wallet_Logo</pixmap>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item>
       <spacer name="verticalSpacer">
@@ -975,6 +988,8 @@ QTabWidget {
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../bitcoin.qrc"/>
+ </resources>
  <connections/>
 </ui>

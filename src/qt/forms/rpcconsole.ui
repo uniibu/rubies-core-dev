@@ -579,15 +579,9 @@ QTabWidget {
         </widget>
        </item>
        <item row="9" column="2">
-        <widget class="QCheckBox" name="isTorProxy">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
+        <widget class="QLabel" name="isTorProxy">
          <property name="text">
           <string>Standard P2P conncetivity over IP</string>
-         </property>
-         <property name="checked">
-          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -751,7 +745,7 @@ QTabWidget {
           </font>
          </property>
          <property name="text">
-          <string>rubies Core</string>
+          <string>Rubies Core</string>
          </property>
         </widget>
        </item>

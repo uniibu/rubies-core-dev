@@ -4,7 +4,11 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "main.h"
+#include "init.h"
+#include <cmath>
 #include "bitcoinrpc.h"
+#include "util.h"
+#include <stdint.h>
 
 using namespace json_spirit;
 using namespace std;
@@ -93,6 +97,15 @@ double GetPoSKernelPS()
     }
 
     return nStakesTime ? dStakeKernelsTriedAvg / nStakesTime : 0;
+}
+Value getnetworkhashps(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() != 0)
+        throw runtime_error(
+                            "getnetworkhashps\n"
+                            "Returns a exponential moving estimate of the current network hashrate (Mhash/s)");
+    
+    return GetPoWMHashPS();
 }
 
 Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool fPrintTransactionDetail)
