@@ -351,7 +351,7 @@ namespace Checkpoints
 }
 
 // rubies: sync-checkpoint master key
-const std::string CSyncCheckpoint::strMasterPubKey = "04b7640b474644ccc5f5ca40ae97f06261e4650ef2f59f38e03cc48e02f16a1b0ce6bb45798e335c84311919c934d0f7866594a249a83be71405e63783ad9d1b12";
+const std::string CSyncCheckpoint::strMasterPubKey = "048f479cf7c3254457058a443a0637e5928dd233905c7d656b0c5f89ec862c86ca63aedf38235a84380fc0dc24622205effb5a71451344847e794e96dda2bffe3c";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
