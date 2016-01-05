@@ -1767,8 +1767,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Fyll i en rubies adress (t.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Fyll i en rubies adress (t.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1911,8 +1911,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adressen att skicka betalningen till  (t.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to send the payment to  (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adressen att skicka betalningen till  (t.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1941,8 +1941,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Fyll i en rubies adress (t.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Fyll i en rubies adress (t.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
 </context>
 <context>
@@ -1965,8 +1965,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adressen att signera meddelandet med (t.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to sign the message with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adressen att signera meddelandet med (t.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2029,8 +2029,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adressen meddelandet var signerad med (t.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address the message was signed with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adressen meddelandet var signerad med (t.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2045,8 +2045,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Fyll i en rubies adress (t.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Fyll i en rubies adress (t.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="-2"/>

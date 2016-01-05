@@ -1766,8 +1766,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Entrer une adresse rubies (par ex: RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Entrer une adresse rubies (par ex: RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1910,8 +1910,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adresse destinataire du paiement (ex: RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to send the payment to  (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adresse destinataire du paiement (ex: RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1940,8 +1940,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Entrer une adresse rubies (ex: RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Entrer une adresse rubies (ex: RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
 </context>
 <context>
@@ -1964,8 +1964,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Entrer une adresse rubies (ex: RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to sign the message with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Entrer une adresse rubies (ex: RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2028,8 +2028,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>L&apos;adresse avec laquelle le message à été signé (ex: RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address the message was signed with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>L&apos;adresse avec laquelle le message à été signé (ex: RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2044,8 +2044,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Entrer une adresse rubies (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Entrer une adresse rubies (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="-2"/>

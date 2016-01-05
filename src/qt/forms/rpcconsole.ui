@@ -533,12 +533,13 @@ QTabWidget {
         <widget class="QLabel" name="label_11">
          <property name="font">
           <font>
+           <pointsize>8</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>Network</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Network&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -591,7 +592,7 @@ QTabWidget {
           <string>Using OpenSSL version</string>
          </property>
          <property name="indent">
-          <number>10</number>
+          <number>0</number>
          </property>
         </widget>
        </item>
@@ -625,7 +626,7 @@ QTabWidget {
           </font>
          </property>
          <property name="text">
-          <string>Block chain</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Block chain information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -745,7 +746,7 @@ QTabWidget {
           </font>
          </property>
          <property name="text">
-          <string>Rubies Core</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Client details&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>

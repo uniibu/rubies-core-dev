@@ -1765,8 +1765,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Zadajte rubies adresu (napr. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Zadajte rubies adresu (napr. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1909,8 +1909,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adresa pre poslanie platby (napr. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to send the payment to  (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adresa pre poslanie platby (napr. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1939,8 +1939,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Zadaj a rubies addresu (napr. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Zadaj a rubies addresu (napr. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
 </context>
 <context>
@@ -1963,8 +1963,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adresa na podpísanie správy (napr. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to sign the message with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adresa na podpísanie správy (napr. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2027,8 +2027,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Adresa správy bola podpísaná (napr. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address the message was signed with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Adresa správy bola podpísaná (napr. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2043,8 +2043,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Zadajte rubies adresu (napr. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Zadajte rubies adresu (napr. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="-2"/>

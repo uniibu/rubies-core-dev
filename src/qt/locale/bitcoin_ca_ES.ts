@@ -1757,8 +1757,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Introdueix una adreça rubies (p.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Introdueix una adreça rubies (p.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1901,8 +1901,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>L&apos;adreça per a enviar el pagament (per exemple: RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to send the payment to  (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>L&apos;adreça per a enviar el pagament (per exemple: RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1931,8 +1931,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Introdueix una adreça rubies (p.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Introdueix una adreça rubies (p.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
 </context>
 <context>
@@ -1955,8 +1955,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>L&apos;adreça per a signar el missatge (per exemple RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address to sign the message with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>L&apos;adreça per a signar el missatge (per exemple RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2019,8 +2019,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>La direcció que va ser signada amb un missatge (per exemple RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>The address the message was signed with (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>La direcció que va ser signada amb un missatge (per exemple RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2035,8 +2035,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a rubies address (e.g. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</source>
-        <translation>Introdueix una adreça rubies (p.ex. RBIES1xGeKnTkaAotEVgs2rnUfVsFv8LVSM)</translation>
+        <source>Enter a rubies address (e.g. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</source>
+        <translation>Introdueix una adreça rubies (p.ex. RBIESZf3yhNHcmsRcYfsWxLQ6ZU5cMm3Lm)</translation>
     </message>
     <message>
         <location line="-2"/>
