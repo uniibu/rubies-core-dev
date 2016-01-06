@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AboutDialog</class>
- <widget class="QDialog" name="AboutDialog">
+ <class>LinksDialog</class>
+ <widget class="QDialog" name="LinksDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>644</width>
-    <height>288</height>
+    <width>619</width>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -234,29 +234,19 @@ QTabWidget {
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
-    <widget class="QLabel" name="label_4">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../bitcoin.qrc">:/images/Small_logo</pixmap>
-     </property>
-    </widget>
-   </item>
-   <item>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <spacer name="verticalSpacer_2">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>40</height>
+         <height>26</height>
         </size>
        </property>
       </spacer>
@@ -269,20 +259,7 @@ QTabWidget {
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Rubies&lt;/span&gt; version&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="textInteractionFlags">
-          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="versionLabel">
-         <property name="cursor">
-          <cursorShape>IBeamCursor</cursorShape>
-         </property>
-         <property name="text">
-          <string notr="true">0.3.666-beta</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Check out these links for more information about Rubies and BetterBets.io!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -305,15 +282,77 @@ QTabWidget {
       </layout>
      </item>
      <item>
-      <widget class="QLabel" name="copyrightLabel">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="link_label1">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://BetterBets.io&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffffff;&quot;&gt;BetterBets.io&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="openExternalLinks">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="link_label2">
+       <property name="text">
+        <string>Link2 or image URL</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::RichText</enum>
+       </property>
+       <property name="openExternalLinks">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="link_label3">
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Copyright © 2016 &lt;a href=&quot;https://betterbets.io&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffffff;&quot;&gt;BetterBets.io&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>Link3 or image URL</string>
        </property>
-       <property name="textFormat">
-        <enum>Qt::RichText</enum>
+       <property name="wordWrap">
+        <bool>true</bool>
        </property>
        <property name="openExternalLinks">
         <bool>true</bool>
@@ -324,31 +363,25 @@ QTabWidget {
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Copyright © The Bitcoin developers</string>
+      <spacer name="verticalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
        </property>
-       <property name="textFormat">
-        <enum>Qt::RichText</enum>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
        </property>
-      </widget>
+      </spacer>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
-       <property name="cursor">
-        <cursorShape>IBeamCursor</cursorShape>
-       </property>
+      <widget class="QLabel" name="link_label4">
        <property name="text">
-        <string>
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</string>
+        <string>Link4 or Image URL</string>
        </property>
-       <property name="wordWrap">
+       <property name="openExternalLinks">
         <bool>true</bool>
-       </property>
-       <property name="textInteractionFlags">
-        <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
        </property>
       </widget>
      </item>
@@ -379,14 +412,12 @@ This product includes software developed by the OpenSSL Project for use in the O
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="../bitcoin.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>AboutDialog</receiver>
+   <receiver>LinksDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -402,7 +433,7 @@ This product includes software developed by the OpenSSL Project for use in the O
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>AboutDialog</receiver>
+   <receiver>LinksDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

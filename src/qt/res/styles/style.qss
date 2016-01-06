@@ -61,9 +61,19 @@ QDialog, QMainWindow, QFrame {
 }
 
 QMenu {
-        background-color: #333333; color: white;
+        background-color: #333333;
+        color: white;
 }
 
+QMenu::item:selected {
+        background-color: #000000;
+        color: white;
+}
+
+QMenu::item:hover {
+        background-color: #111111;
+        color: white;
+}
 QLabel {
         background-color: transparent;
 }

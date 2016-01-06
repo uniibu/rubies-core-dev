@@ -11,6 +11,7 @@
 #include "signverifymessagedialog.h"
 #include "optionsdialog.h"
 #include "aboutdialog.h"
+#include "linksdialog.h"
 #include "clientmodel.h"
 #include "walletmodel.h"
 #include "editaddressdialog.h"
@@ -279,6 +280,9 @@ void BitcoinGUI::createActions()
     aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About rubies"), this);
     aboutAction->setToolTip(tr("Show information about rubies"));
     aboutAction->setMenuRole(QAction::AboutRole);
+    linksAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Rubies Links"), this);
+    linksAction->setToolTip(tr("Show links about Rubies & BetterBets.io"));
+    linksAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
@@ -307,6 +311,7 @@ void BitcoinGUI::createActions()
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
+    connect(linksAction, SIGNAL(triggered()), this, SLOT(linksClicked()));
     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(optionsAction, SIGNAL(triggered()), this, SLOT(optionsClicked()));
     connect(toggleHideAction, SIGNAL(triggered()), this, SLOT(toggleHidden()));
@@ -357,6 +362,10 @@ void BitcoinGUI::createMenuBar()
     settings->addAction(lockWalletAction);
     settings->addSeparator();
     settings->addAction(optionsAction);
+
+    QMenu *links = appMenuBar->addMenu(tr("&Links"));
+    links->addSeparator();
+    links->addAction(linksAction);
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
@@ -510,6 +519,13 @@ void BitcoinGUI::aboutClicked()
 {
     AboutDialog dlg;
     dlg.setModel(clientModel);
+    dlg.exec();
+}
+
+void BitcoinGUI::linksClicked()
+{
+    LinksDialog dlg;
+//    dlg.setModel(clientModel);
     dlg.exec();
 }
 

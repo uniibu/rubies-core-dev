@@ -82,6 +82,7 @@ private:
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *aboutAction;
+    QAction *linksAction;
     QAction *receiveCoinsAction;
     QAction *optionsAction;
     QAction *toggleHideAction;
@@ -156,6 +157,8 @@ private slots:
     void optionsClicked();
     /** Show about dialog */
     void aboutClicked();
+    /** Show links dialog */
+    void linksClicked();
 #ifndef Q_OS_MAC
     /** Handle tray icon clicked */
     void trayIconActivated(QSystemTrayIcon::ActivationReason reason);

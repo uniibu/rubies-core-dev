@@ -2,7 +2,7 @@ TEMPLATE = app
 DEFINES += FN1 FN2
 FN1 = rubies-core
 FN2 = -qt-
-VERSION = 1.0.0.7
+VERSION = 1.0.0.8
 TARGET = $$FN1$$FN2$$VERSION
 INCLUDEPATH += src src/json \
     src/qt 
@@ -315,7 +315,8 @@ HEADERS += src/qt/bitcoingui.h \
     src/threadsafety.h \
     src/txdb-leveldb.h \
     src/checkblocks.h \
-    src/hashblock.h
+    src/hashblock.h \
+    src/qt/linksdialog.h
 
 SOURCES += src/qt/bitcoin.cpp \
     src/qt/bitcoingui.cpp \
@@ -390,7 +391,8 @@ SOURCES += src/qt/bitcoin.cpp \
     src/json/json_spirit_reader.cpp \
     src/json/json_spirit_writer.cpp \
     src/bloom.cpp \
-    src/hash.cpp
+    src/hash.cpp \
+    src/qt/linksdialog.cpp
 
 RESOURCES += \
     src/qt/bitcoin.qrc
@@ -407,7 +409,8 @@ FORMS += \
     src/qt/forms/sendcoinsentry.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
-    src/qt/forms/optionsdialog.ui
+    src/qt/forms/optionsdialog.ui \
+    src/qt/forms/linksdialog.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
