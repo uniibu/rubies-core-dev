@@ -37,7 +37,7 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 CBigNum bnProofOfWorkLimit(~uint256(0) >> 16); // PoW starting difficulty
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 16);//  PoS starting difficulty
-CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20); // PoW starting difficulty on Testnet
+CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16); // PoW starting difficulty on Testnet
 CBigNum bnProofOfWorkFirstBlock(~uint256(0) >> 30);
 
 unsigned int nTargetSpacing = 1 * 60; // 60 seconds
