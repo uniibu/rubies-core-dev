@@ -35,8 +35,8 @@ unsigned int nTransactionsUpdated = 0;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 
-CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // PoW starting difficulty = 0.0002441
-CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);//  PoS starting difficulty = 0.0002441
+CBigNum bnProofOfWorkLimit(~uint256(0) >> 16); // PoW starting difficulty
+CBigNum bnProofOfStakeLimit(~uint256(0) >> 16);//  PoS starting difficulty
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20); // PoW starting difficulty on Testnet
 CBigNum bnProofOfWorkFirstBlock(~uint256(0) >> 30);
 
@@ -2580,10 +2580,10 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = txNew.nTime;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 1024067;
+        block.nNonce   = 37940;
         if(fTestNet)
         {
-            block.nNonce   = 1024067;
+            block.nNonce   = 37940;
         }
         if (false  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2606,7 +2606,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-        //// debug print
+        // debug print
         assert(block.hashMerkleRoot == uint256("ef2a308648dc141456affac444c5ac305ba77956bc517de4f004f03179c8b994"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));

@@ -4,8 +4,8 @@
 #include "bignum.h"
 
 // Genesis block 0 hash
-static const uint256 hashGenesisBlock("00000099886cd33661edf127b6eaa5a46dd107ef4b7e0c6aea4a2d9beec95457");
-static const uint256 hashGenesisBlockTestNet("00000099886cd33661edf127b6eaa5a46dd107ef4b7e0c6aea4a2d9beec95457");
+static const uint256 hashGenesisBlock("00001219fa57f6e7a8826b0e73a74752dbd46db85df01f6374cbc84d86ab764c");
+static const uint256 hashGenesisBlockTestNet("00001219fa57f6e7a8826b0e73a74752dbd46db85df01f6374cbc84d86ab764c");
 
 // Chechpoints to ensure the correct chain usage during sync
 

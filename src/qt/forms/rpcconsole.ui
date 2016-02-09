@@ -582,7 +582,7 @@ QTabWidget {
        <item row="9" column="2">
         <widget class="QLabel" name="isTorProxy">
          <property name="text">
-          <string>Standard P2P conncetivity over IP</string>
+          <string>Standard P2P connectivity over IP</string>
          </property>
         </widget>
        </item>
