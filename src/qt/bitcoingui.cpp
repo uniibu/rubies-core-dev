@@ -81,11 +81,14 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
 
 #ifdef Q_OS_MAC
-    resize(900, 610);
-    setWindowTitle(tr("Rubies Core wallet"));
-#else
+    resize(930, 610);
+    setWindowTitle(tr("Rubies wallet - Mac"));
+#elif _WIN32
     resize(800, 600);
-    setWindowTitle(tr("Rubies Core wallet"));
+    setWindowTitle(tr("Rubies wallet - Windows"));
+#else
+    resize(1000, 650);
+    setWindowTitle(tr("Rubies wallet - Linux"));
 #endif
 
 
@@ -290,7 +293,13 @@ void BitcoinGUI::createActions()
     linksAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Rubies Links"), this);
     linksAction->setToolTip(tr("Show links about Rubies & BetterBets.io"));
     linksAction->setMenuRole(QAction::AboutRole);
+
+#if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
+#else
+    aboutQtAction = new QAction(QIcon(":/qt-project.org/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
+#endif
+
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
