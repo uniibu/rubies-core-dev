@@ -1,4 +1,3 @@
+# Rubies core wallet
 
-rubies core
-
-pre-release testing only
+For more information please visit the website at https://betterbets.io
