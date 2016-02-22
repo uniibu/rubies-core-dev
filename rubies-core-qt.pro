@@ -2,7 +2,7 @@ TEMPLATE = app
 DEFINES += FN1 FN2
 FN1 = rubies-core
 FN2 = -qt-v
-VERSION = 1.0.1.0
+VERSION = 1.0.1.1
 TARGET = $$FN1$$FN2$$VERSION
 INCLUDEPATH += src src/json \
     src/qt 
