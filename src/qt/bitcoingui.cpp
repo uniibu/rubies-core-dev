@@ -604,8 +604,10 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
     if (!strStatusBarWarnings.isEmpty())
     {
         progressBarLabel->setText(strStatusBarWarnings);
+        progressBarLabel->setStyleSheet("QLabel { background-color: #FA7A2A; color: #ffffff; font-weight: bold;}");
         progressBarLabel->setVisible(true);
         progressBar->setVisible(false);
+
     }
 
     QDateTime lastBlockDate = clientModel->getLastBlockDate();

@@ -27,6 +27,7 @@ namespace Checkpoints
         boost::assign::map_list_of
             ( 0, hashGenesisBlock )
             (11000, CheckPointBlock1)
+            (18050, CheckPointBlock2)
 
     ;
 
