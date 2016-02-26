@@ -27,7 +27,12 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 43200;
+static const int LAST_POW_BLOCK = 10000000;
+static const int PoS_V2_Start = 27000;
+static const int PoS_V2_Start_TestNet = 70;
+
+static const int PoW_V2_Start = 27000;
+static const int PoW_V2_Start_TestNet = 70;
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;

@@ -36,7 +36,11 @@ map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 CBigNum bnProofOfWorkLimit(~uint256(0) >> 16); // PoW starting difficulty
+CBigNum bnProofOfWorkLimitV2(~uint256(0) >> 20); // PoW V2 starting difficulty
+
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 16);//  PoS starting difficulty
+CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 20);//  PoS V2 starting difficulty
+
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16); // PoW starting difficulty on Testnet
 CBigNum bnProofOfWorkFirstBlock(~uint256(0) >> 30);
 
@@ -1095,7 +1099,7 @@ unsigned int static GetNextWorkRequired_legacy(const CBlockIndex* pindexLast)
     if (bnNew > bnProofOfWorkLimit)
         bnNew = bnProofOfWorkLimit;
 
-    /// debug print
+    // debug print
     printf("GetNextWorkRequired (legacy) RETARGET\n");
     printf("Before: %08x  %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
     printf("After:  %08x  %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
@@ -1103,9 +1107,18 @@ unsigned int static GetNextWorkRequired_legacy(const CBlockIndex* pindexLast)
     return bnNew.GetCompact();
 }
 
+
+// Calculate PoW or PoS next target difficulty
 static unsigned int GetNextTargetRequired_DGW(const CBlockIndex* pindexLast, bool fProofOfStake)
 {
-    CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
+    CBigNum bnTargetLimit;
+
+    if (pindexBest->nHeight > (fTestNet ? PoS_V2_Start_TestNet : PoS_V2_Start)) {
+        nTargetSpacing = 2 * 60;
+        bnTargetLimit = fProofOfStake ? bnProofOfStakeLimitV2 : bnProofOfWorkLimitV2;
+    } else {
+        bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
+    }
 
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
@@ -1140,7 +1153,7 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 {
     int change;
     if(fTestNet)
-        change = 50;
+        change = 5;
     else
         change = 50;
     if(pindexLast->nHeight + 1 > change)
@@ -1931,7 +1944,6 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
         boost::replace_all(strCmd, "%s", hashBestChain.GetHex());
         boost::thread t(runCommand, strCmd); // thread runs free
     }
-
     return true;
 }
 
@@ -2086,7 +2098,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     // These are checks that are independent of context
     // that can be verified before saving an orphan block.
     if(pindexBest != NULL && pindexBest->nHeight > 1)
-        nCoinbaseMaturity = 100; //coinbase maturity
+
     // Size limits
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return DoS(100, error("CheckBlock() : size limits failed"));
@@ -2541,9 +2553,13 @@ bool LoadBlockIndex(bool fAllowNew)
 
         bnTrustedModulus.SetHex("f0d14cf72623dacfe738d0892b599be0f31052239cddd95a3f25101c801dc990453b38c9434efe3f372db39a32c2bb44cbaea72d62c8931fa785b0ec44531308df3e46069be5573e49bb29f4d479bfc3d162f57a5965db03810be7636da265bfced9c01a6b0296c77910ebdc8016f70174f0f18a57b3b971ac43a934c6aedbc5c866764a3622b5b7e3f9832b8b3f133c849dbcc0396588abcd1e41048555746e4823fb8aba5b3d23692c6857fccce733d6bb6ec1d5ea0afafecea14a0f6f798b6b27f77dc989c557795cc39a0940ef6bb29a7fc84135193a55bcfc2f01dd73efad1b69f45a55198bd0e6bef4d338e452f6a420f1ae2b1167b923f76633ab6e55");
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 16 bits PoW target limit for testnet
-        nStakeMinAge = 15 * 60; // test net min age is 15 mins
-        nCoinbaseMaturity = 10; // test maturity is 10 blocks
+        nStakeMinAge = 3 * 60; // test net min age is 3 mins
+        nCoinbaseMaturity = 5; // test net maturity base is 5 blocks
         nModifierInterval = 60;
+        printf("TestNet nCoinbaseMaturity = %u \n", (nCoinbaseMaturity + 10));
+
+
+
     }
     else
     {

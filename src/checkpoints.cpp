@@ -28,6 +28,7 @@ namespace Checkpoints
             ( 0, hashGenesisBlock )
             (11000, CheckPointBlock1)
             (18050, CheckPointBlock2)
+            (20500, CheckPointBlock3)
 
     ;
 
