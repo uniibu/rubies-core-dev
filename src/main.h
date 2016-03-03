@@ -27,11 +27,11 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 10000000;
-static const int PoS_V2_Start = 27000;
+static const int LAST_POW_BLOCK = 100000000;
+static const int PoS_V2_Start = 30400;
 static const int PoS_V2_Start_TestNet = 70;
 
-static const int PoW_V2_Start = 27000;
+static const int PoW_V2_Start = 30400;
 static const int PoW_V2_Start_TestNet = 70;
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
@@ -57,23 +57,12 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-// new boundaries in preparation for time drift change in future hard fork
 inline int64_t PastDrift(int64_t nTime)   {
-    if (nTime < 4579862332){
         return nTime - 10 * 60;
-        }
-    else {
-        return nTime - 10 * 60;
-        }
 }
 
 inline int64_t FutureDrift(int64_t nTime) {
-    if (nTime < 4579862332){
         return nTime + 10 * 60;
-        }
-    else {
-        return nTime + 10 * 60;
-        }
 }
 
 extern int64_t devCoin;

@@ -100,7 +100,7 @@ QLabel[openExternalLinks=true], QHeaderView { color: #aaaaaa }
 QLabel[openExternalLinks=false] { color: white; font-weight: normal }
 QPushButton, QToolButton {
         border: 4px solid #111;
-        border-radius: 7px;
+        border-radius: 4px;
         background-color: #111;
         color: white;
         padding: 6px;
