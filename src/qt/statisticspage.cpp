@@ -59,9 +59,9 @@ void StatisticsPage::updateStatistics()
     QString stakemax = QString::number(nNetworkWeight);
     QString phase = "";
     phase = "Proof of Stake only";
-    QString subsidy = QString::number(nSubsidy, 'f', 6);
-    QString hardness = QString::number(pHardness, 'f', 6);
-    QString hardness2 = QString::number(pHardness2, 'f', 6);
+    QString subsidy = QString::number(nSubsidy, 'f', 8);
+    QString hardness = QString::number(pHardness, 'f', 8);
+    QString hardness2 = QString::number(pHardness2, 'f', 8);
     QString pawrate = QString::number(pPawrate2, 'f', 3);
     QString Qlpawrate = model->getLastBlockDate().toString();
 
