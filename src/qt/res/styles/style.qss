@@ -1,3 +1,13 @@
+QWidget#treeWidget {
+        background-color: #ffffff;
+        color:black;
+}
+
+QRadioButton {
+        background-color: #333333;
+        color:#ffffff;
+}
+
 QProgressBar {
         background-color: #333333;
         border-radius: 2px;
