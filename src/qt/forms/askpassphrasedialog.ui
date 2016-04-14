@@ -95,8 +95,8 @@ QPushButton:pressed, QToolButton:checked {
         color: #AEC6CF;
 }
 QPushButton:pressed, QToolButton:pressed {
-        border-color: #AEC6DF;
-        color: #AEC6DF;
+        border-color: #c81f33;
+        color: #c81f33;
 }
 QPushButton:disabled, QToolButton:disabled {
         color: #444;
