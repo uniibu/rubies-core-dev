@@ -242,7 +242,7 @@ QTabWidget {
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../bitcoin.qrc">:/images/Small_logo</pixmap>
+      <pixmap resource="../bitcoin.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>

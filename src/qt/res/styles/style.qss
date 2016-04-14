@@ -1,13 +1,3 @@
-QWidget#treeWidget {
-        background-color: #ffffff;
-        color:black;
-}
-
-QRadioButton {
-        background-color: #333333;
-        color:#ffffff;
-}
-
 QProgressBar {
         background-color: #333333;
         border-radius: 2px;
@@ -37,6 +27,7 @@ QFormLayout {
         background-color: #111;
         color: white;
 }
+
 
 QSpinBox {
         border-radius: 4px;
@@ -109,11 +100,11 @@ QFrame#frame, QFrame#frame_2, QFrame#frame_3 {
 QLabel[openExternalLinks=true], QHeaderView { color: #aaaaaa }
 QLabel[openExternalLinks=false] { color: white; font-weight: normal }
 QPushButton, QToolButton {
-        border: 4px solid #111;
+        border: 3px solid #111;
         border-radius: 4px;
         background-color: #111;
         color: white;
-        padding: 6px;
+        padding: 4px;
         margin: 6px;
 }
 QPushButton:pressed, QToolButton:checked {
