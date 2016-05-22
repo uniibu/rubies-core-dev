@@ -1,0 +1,1 @@
+sudo apt-add-repository ppa:bitcoin/bitcoin -y && sudo apt-get update && sudo apt-get install build-essential libdb4.8++-dev libtool libssl-dev libboost-all-dev libminiupnpc-dev -y && cd src && sudo make -f makefile.unix
